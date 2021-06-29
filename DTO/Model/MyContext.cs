@@ -27,5 +27,10 @@ namespace DTO.Model
         public DbSet<OrderState> OrderStates { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Server=(LocalDB)\MSSQLLocalDB;Database=CLOTHINGSTORE;Trusted_Connection=True;");
+        }
     }
 }
