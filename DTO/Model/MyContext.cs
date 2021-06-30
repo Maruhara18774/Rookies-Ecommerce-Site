@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DTO.Model
 {
-    public class MyContext : DbContext
+    public class MyContext : IdentityDbContext<Customer>
     {
         public MyContext(DbContextOptions<MyContext> options) : base(options)
         {
