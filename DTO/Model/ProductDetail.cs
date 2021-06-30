@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
 namespace DTO.Model
 {
@@ -31,15 +31,15 @@ namespace DTO.Model
 
         public List<Feedback> Feedbacks { get; set; }
 
-        public ProductDetail(int id, string textureName, string textureImage, int quantity, DateTime createDate, int productId)
-        {
-            this.ProductDetail_ID = id;
-            this.Texture_Name = textureName;
-            this.Texture_Image = textureImage;
-            this.ProductDetail_Quantity = quantity;
-            this.ProductDetail_CreatedDate = createDate;
-            this.ProductDetail_UpdatedDate = createDate;
-            this.Product_ID = productId;
-        }
+        //public ProductDetail(int id, string textureName, string textureImage, int quantity, DateTime createDate, int productId)
+        //{
+        //    this.ProductDetail_ID = id;
+        //    this.Texture_Name = textureName;
+        //    this.Texture_Image = textureImage;
+        //    this.ProductDetail_Quantity = quantity;
+        //    this.ProductDetail_CreatedDate = createDate;
+        //    this.ProductDetail_UpdatedDate = createDate;
+        //    this.Product_ID = productId;
+        //}
     }
 }

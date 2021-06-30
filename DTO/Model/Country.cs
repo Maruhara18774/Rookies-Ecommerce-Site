@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
 namespace DTO.Model
 {
@@ -16,10 +16,10 @@ namespace DTO.Model
         public string Country_Name { get; set; }
 
         public List<Customer> Customers { get; set; }
-        public Country(int id, string name)
-        {
-            this.Country_ID = id;
-            this.Country_Name = name;
-        }
+        //public Country(int id, string name)
+        //{
+        //    this.Country_ID = id;
+        //    this.Country_Name = name;
+        //}
     }
 }

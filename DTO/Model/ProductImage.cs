@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
 namespace DTO.Model
 {
@@ -18,11 +18,11 @@ namespace DTO.Model
 
         public ProductDetail ProductDetail { get; set; }
 
-        public ProductImage(int id, string image, int productDetailId)
-        {
-            this.ProductImage_ID = id;
-            this.ProductImage_Image = image;
-            this.ProductDetail_ID = productDetailId;
-        }
+        //public ProductImage(int id, string image, int productDetailId)
+        //{
+        //    this.ProductImage_ID = id;
+        //    this.ProductImage_Image = image;
+        //    this.ProductDetail_ID = productDetailId;
+        //}
     }
 }

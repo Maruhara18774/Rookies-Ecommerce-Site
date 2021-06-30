@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
 namespace DTO.Model
 {
@@ -16,10 +16,10 @@ namespace DTO.Model
 
         public List<Order> Orders { get; set; }
 
-        public OrderState(int id, string name)
-        {
-            this.OrderState_ID = id;
-            this.OrderState_Name = name;
-        }
+        //public OrderState(int id, string name)
+        //{
+        //    this.OrderState_ID = id;
+        //    this.OrderState_Name = name;
+        //}
     }
 }

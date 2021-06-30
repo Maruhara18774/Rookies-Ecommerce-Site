@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
 namespace DTO.Model
 {
@@ -15,10 +15,12 @@ namespace DTO.Model
         public string Category_Name { get; set; }
         public List<Product> Products { get; set; }
 
+        /*
         public Category(int id, string name)
         {
             this.Category_ID = id;
             this.Category_Name = name;
         }
+        */
     }
 }

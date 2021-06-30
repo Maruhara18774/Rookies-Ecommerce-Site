@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
 namespace DTO.Model
 {
@@ -17,10 +17,10 @@ namespace DTO.Model
 
         public List<Product> Products { get; set; }
 
-        public Size(int id, string key)
-        {
-            this.Size_ID = id;
-            this.Size_Key = key;
-        }
+        //public Size(int id, string key)
+        //{
+        //    this.Size_ID = id;
+        //    this.Size_Key = key;
+        //}
     }
 }

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
 namespace DTO.Model
 {
@@ -18,11 +18,13 @@ namespace DTO.Model
 
         public Admin Admin { get; set; }
 
+        /*
         public AdminLog(int id, int admin_id, string description)
         {
             this.Log_ID = id;
             this.Admin_ID = admin_id;
             this.Log_Description = description;
         }
+        */
     }
 }

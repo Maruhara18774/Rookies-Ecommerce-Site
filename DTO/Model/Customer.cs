@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
 namespace DTO.Model
 {
@@ -34,16 +34,16 @@ namespace DTO.Model
 
         public List<Feedback> Feedbacks { get; set; }
 
-        public Customer(int id, string firstName, string lastName, string email, int countryId, string address, string phone, string password)
-        {
-            this.Customer_ID = id;
-            this.Customer_FirstName = firstName;
-            this.Customer_LastName = lastName;
-            this.Customer_Email = email;
-            this.Country_ID = countryId;
-            this.Customer_Address = address;
-            this.Customer_PhoneNumber = phone;
-            this.Password = password;
-        }
+        //public Customer(int id, string firstName, string lastName, string email, int countryId, string address, string phone, string password)
+        //{
+        //    this.Customer_ID = id;
+        //    this.Customer_FirstName = firstName;
+        //    this.Customer_LastName = lastName;
+        //    this.Customer_Email = email;
+        //    this.Country_ID = countryId;
+        //    this.Customer_Address = address;
+        //    this.Customer_PhoneNumber = phone;
+        //    this.Password = password;
+        //}
     }
 }

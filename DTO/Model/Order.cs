@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
 namespace DTO.Model
 {
@@ -27,13 +27,13 @@ namespace DTO.Model
 
         public List<OrderDetail> OrderDetails { get; set; }
 
-        public Order(int id, int customerId, DateTime createDate, int orderState)
-        {
-            this.Order_ID = id;
-            this.Customer_ID = customerId;
-            this.CreatedDate = createDate;
-            this.Order_Total = 0;
-            this.OrderState_ID = orderState;
-        }
+        //public Order(int id, int customerId, DateTime createDate, int orderState)
+        //{
+        //    this.Order_ID = id;
+        //    this.Customer_ID = customerId;
+        //    this.CreatedDate = createDate;
+        //    this.Order_Total = 0;
+        //    this.OrderState_ID = orderState;
+        //}
     }
 }
