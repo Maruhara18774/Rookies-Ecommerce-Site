@@ -16,15 +16,15 @@ namespace DTO.Model
 
         public string Admin_Password { get; set; }
 
-        public List<AdminLog> AdminLogs { get; set; }
+        public List<AdminLog> AdminLogs { get; set; } = new List<AdminLog>();
 
-        /*
-        public Admin(int id, string username, string password)
-        {
-            this.Admin_ID = id;
-            this.Admin_Username = username;
-            this.Admin_Password = password;
-        }
-        */
+        //public Admin() { }
+        //public Admin(int id, string username, string password)
+        //{
+        //    this.Admin_ID = id;
+        //    this.Admin_Username = username;
+        //    this.Admin_Password = password;
+        //}
+        
     }
 }

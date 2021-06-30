@@ -12,19 +12,22 @@ namespace DTO.Model
         [Key]
         public int Log_ID { get; set; }
 
-        public int Admin_ID { get; set; }
+        public DateTime ChangeTime { get; set; }
 
         public string Log_Description { get; set; }
 
         public Admin Admin { get; set; }
 
-        /*
-        public AdminLog(int id, int admin_id, string description)
-        {
-            this.Log_ID = id;
-            this.Admin_ID = admin_id;
-            this.Log_Description = description;
-        }
-        */
+        //public AdminLog() {
+        //    this.ChangeTime = DateTime.Now;
+        //}
+        
+        //public AdminLog(int id, int admin_id, string description)
+        //{
+        //    this.Log_ID = id;
+        //    this.Admin_ID = admin_id;
+        //    this.Log_Description = description;
+        //}
+        
     }
 }

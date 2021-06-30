@@ -14,8 +14,9 @@ namespace DTO.Model
 
         public string ProductState_Name { get; set; }
 
-        public List<Product> Products { get; set; }
+        public List<Product> Products { get; set; } = new List<Product>();
 
+        //public ProductState() { }
         //public ProductState(int id, string name)
         //{
         //    this.ProductState_ID = id;

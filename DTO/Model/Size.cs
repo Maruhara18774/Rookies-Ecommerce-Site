@@ -15,8 +15,9 @@ namespace DTO.Model
         [MaxLength(10)]
         public string Size_Key { get; set; }
 
-        public List<Product> Products { get; set; }
+        public List<Product> Products { get; set; } = new List<Product>();
 
+        //public Size() { }
         //public Size(int id, string key)
         //{
         //    this.Size_ID = id;

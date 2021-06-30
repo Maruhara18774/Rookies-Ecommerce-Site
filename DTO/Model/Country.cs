@@ -15,7 +15,9 @@ namespace DTO.Model
         [MaxLength(100)]
         public string Country_Name { get; set; }
 
-        public List<Customer> Customers { get; set; }
+        public List<Customer> Customers { get; set; } = new List<Customer>();
+
+        //public Country() { }
         //public Country(int id, string name)
         //{
         //    this.Country_ID = id;

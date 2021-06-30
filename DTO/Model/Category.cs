@@ -13,14 +13,15 @@ namespace DTO.Model
         public int Category_ID { get; set; }
         [MaxLength(100)]
         public string Category_Name { get; set; }
-        public List<Product> Products { get; set; }
+        public List<Product> Products { get; set; } = new List<Product>();
 
-        /*
-        public Category(int id, string name)
-        {
-            this.Category_ID = id;
-            this.Category_Name = name;
-        }
-        */
+        //public Category() { }
+
+        //public Category(int id, string name)
+        //{
+        //    this.Category_ID = id;
+        //    this.Category_Name = name;
+        //}
+
     }
 }

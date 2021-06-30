@@ -21,8 +21,6 @@ namespace DTO.Model
         [DataType(DataType.EmailAddress)]
         public string Customer_Email { get; set; }
 
-        public int Country_ID { get; set; }
-
         public string Customer_Address { get; set; }
 
         [DataType(DataType.PhoneNumber)]
@@ -32,8 +30,12 @@ namespace DTO.Model
 
         public Country Country { get; set; }
 
-        public List<Feedback> Feedbacks { get; set; }
+        public List<Feedback> Feedbacks { get; set; } = new List<Feedback>();
 
+        //public Customer()
+        //{
+        //    this.Password = "";
+        //}
         //public Customer(int id, string firstName, string lastName, string email, int countryId, string address, string phone, string password)
         //{
         //    this.Customer_ID = id;

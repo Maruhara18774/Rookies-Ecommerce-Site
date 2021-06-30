@@ -14,10 +14,9 @@ namespace DTO.Model
 
         public string ProductImage_Image { get; set; }
 
-        public int ProductDetail_ID { get; set; }
-
         public ProductDetail ProductDetail { get; set; }
 
+        //public ProductImage() { }
         //public ProductImage(int id, string image, int productDetailId)
         //{
         //    this.ProductImage_ID = id;

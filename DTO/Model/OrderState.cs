@@ -14,7 +14,9 @@ namespace DTO.Model
 
         public string OrderState_Name { get; set; }
 
-        public List<Order> Orders { get; set; }
+        public List<Order> Orders { get; set; } = new List<Order>();
+
+        //public OrderState() { }
 
         //public OrderState(int id, string name)
         //{

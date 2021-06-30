@@ -21,15 +21,15 @@ namespace DTO.Model
 
         public string Product_Description { get; set; }
 
-        public int Category_ID { get; set; }
-
-        public int ProductState_ID { get; set; }
-
-
         public Category Category { get; set; }
 
-        public List<Size> Sizes { get; set; }
+        public List<Size> Sizes { get; set; } = new List<Size>();
         public ProductState ProductState { get; set; }
+
+        //public Product()
+        //{
+        //    this.Product_Price = 0;
+        //}
 
         //public Product(int id, string name, double price, string description, int cateId, int stateId)
         //{

@@ -23,13 +23,17 @@ namespace DTO.Model
 
         public DateTime ProductDetail_UpdatedDate { get; set; }
 
-        public int Product_ID { get; set; }
-
         public Product Product { get; set; }
 
-        public List<ProductImage> ProductImages { get; set; }
+        public List<ProductImage> ProductImages { get; set; } = new List<ProductImage>();
 
-        public List<Feedback> Feedbacks { get; set; }
+        public List<Feedback> Feedbacks { get; set; } = new List<Feedback>();
+
+        //public ProductDetail()
+        //{
+        //    this.ProductDetail_CreatedDate = DateTime.Now;
+        //    this.ProductDetail_UpdatedDate = DateTime.Now
+        //}
 
         //public ProductDetail(int id, string textureName, string textureImage, int quantity, DateTime createDate, int productId)
         //{

@@ -12,10 +12,6 @@ namespace DTO.Model
         [Key]
         public int Feedback_ID { get; set; }
 
-        public int ProductDetail_ID { get; set; }
-
-        public int Customer_ID { get; set; }
-
         [Range(minimum: 1, maximum: 5)]
         public int Feedback_Rating { get; set; }
 
@@ -28,6 +24,11 @@ namespace DTO.Model
 
         public Customer Customer { get; set; }
         public ProductDetail ProductDetail { get; set; }
+
+        //public Feedback()
+        //{
+        //    CreatedDate = DateTime.Now;
+        //}
 
         //public Feedback(int id, int productDetailId, int customerId, int rating, string title, string content, DateTime createDate)
         //{

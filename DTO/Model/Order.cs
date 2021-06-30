@@ -12,20 +12,22 @@ namespace DTO.Model
         [Key]
         public int Order_ID { get; set; }
 
-        public int Customer_ID { get; set; }
-
         public DateTime CreatedDate { get; set; }
 
         [Range(minimum: 0, maximum: double.MaxValue)]
         public double Order_Total { get; set; }
 
-        public int OrderState_ID { get; set; }
-
         public Customer Customer { get; set; }
 
         public OrderState OrderState { get; set; }
 
-        public List<OrderDetail> OrderDetails { get; set; }
+        public List<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
+
+        //public Order()
+        //{
+        //    this.Order_Total = 0;
+        //    this.CreatedDate = DateTime.Now;
+        //}
 
         //public Order(int id, int customerId, DateTime createDate, int orderState)
         //{
