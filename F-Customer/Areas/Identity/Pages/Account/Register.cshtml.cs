@@ -15,7 +15,7 @@ using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using Server_Default.Models;
 
-namespace Server_Default.Areas.Identity.Pages.Account
+namespace F_Customer.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
     public class RegisterModel : PageModel

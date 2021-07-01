@@ -8,8 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Server_Default.Data;
 using Server_Default.Models;
 
-[assembly: HostingStartup(typeof(Server_Default.Areas.Identity.IdentityHostingStartup))]
-namespace Server_Default.Areas.Identity
+[assembly: HostingStartup(typeof(F_Customer.Areas.Identity.IdentityHostingStartup))]
+namespace F_Customer.Areas.Identity
 {
     public class IdentityHostingStartup : IHostingStartup
     {
