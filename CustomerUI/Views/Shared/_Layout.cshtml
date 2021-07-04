@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cute Dresses, Tops, Shoes, Jewelry & Clothing for Women | Lulus</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/2990/2990564.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <style>
+        .subNav li {
+            font-size: medium;
+            padding-left: 16px;
+            padding-right: 16px;
+            font-family: cursive;
+        }
+    </style>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index" style="padding-left:45%">
+                    <img src="https://www.lulus.com/images/luluserv/logos/lulus_logo_alt_3.png?v=6.435.0" height="30">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        @*<li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            </li>*@
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" id="navbar_top">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav subNav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NEW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BESTSELLERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DRESSES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">WEDDINGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CLOTHING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SWIM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SHOES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">EXTRAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SALE</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3 px-5">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 20212 - IdentityServer - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                document.getElementById('navbar_top').classList.add('fixed-top');
+                document.getElementById('navbar_top').classList.remove('bg-white');
+                document.getElementById('navbar_top').classList.add('bg-light');
+                // add padding top to show content behind navbar
+                navbar_height = document.querySelector('.navbar').offsetHeight;
+                document.body.style.paddingTop = navbar_height + 'px';
+            } else {
+                document.getElementById('navbar_top').classList.remove('fixed-top');
+                document.getElementById('navbar_top').classList.remove('bg-light');
+                document.getElementById('navbar_top').classList.add('bg-white');
+                // remove padding top from body
+                document.body.style.paddingTop = '0';
+            }
+        });
+    });
+</script>
