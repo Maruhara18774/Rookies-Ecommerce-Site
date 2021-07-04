@@ -32,7 +32,9 @@ namespace IdentityServer
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDatabaseDeveloperPageExceptionFilter();
-            services.AddDefaultIdentity<Customer>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<Customer>(options => { }
+            //options.SignIn.RequireConfirmedAccount = true
+            )
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
         }
