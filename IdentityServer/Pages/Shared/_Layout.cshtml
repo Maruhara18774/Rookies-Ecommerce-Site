@@ -20,7 +20,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index" style="padding-left:45%">
+                <a class="navbar-brand" asp-area="Main" asp-page="/Homepage/Index" style="padding-left:45%">
                     <img src="https://www.lulus.com/images/luluserv/logos/lulus_logo_alt_3.png?v=6.435.0" height="30">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -74,16 +74,17 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3 px-5">
-            @RenderBody()
+    <div>
+        @RenderBody()
+    </div>
+    <div class="container"  style="margin:0; padding:0;width:100%">
+        <main role="main">
+            
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 20212 - IdentityServer - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
+    <footer class="border-top footer" style="background-color:aqua">
+        A
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

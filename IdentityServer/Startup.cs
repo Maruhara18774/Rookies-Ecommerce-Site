@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using IdentityServer.Data.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace IdentityServer
 {
@@ -58,13 +59,16 @@ namespace IdentityServer
             app.UseStaticFiles();
 
             app.UseRouting();
-
             app.UseAuthentication();
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapAreaControllerRoute(
+                    name: "default",
+                    areaName: "Main",
+                    pattern: "{controller=Homepage}/{action=Index}/{id?}"
+                    );
             });
         }
     }

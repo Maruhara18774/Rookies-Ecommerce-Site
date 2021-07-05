@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CustomerUI
+namespace APIServer
 {
     public class Program
     {
@@ -20,7 +20,6 @@ namespace CustomerUI
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStaticWebAssets();
                     webBuilder.UseStartup<Startup>();
                 });
     }
