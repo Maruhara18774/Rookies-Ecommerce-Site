@@ -22,6 +22,8 @@
   <ItemGroup>
     <Folder Include="Areas\Main\Data\" />
     <Folder Include="Areas\Main\Models\" />
+    <Folder Include="Controllers\Static\" />
+    <Folder Include="Views\" />
   </ItemGroup>
 
 </Project>

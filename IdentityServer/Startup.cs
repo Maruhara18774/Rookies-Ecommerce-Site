@@ -38,6 +38,8 @@ namespace IdentityServer
             )
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages().AddRazorRuntimeCompilation();
+            // Fixed: Map View in other areas
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,11 +66,19 @@ namespace IdentityServer
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
-                endpoints.MapAreaControllerRoute(
-                    name: "default",
-                    areaName: "Main",
-                    pattern: "{controller=Homepage}/{action=Index}/{id?}"
-                    );
+                endpoints.MapControllerRoute(
+                name: "default",
+                pattern: "{area=Main}/{controller=Homepage}/{action=Index}/{id?}");
+                //endpoints.MapAreaControllerRoute(
+                //    name: "default",
+                //    areaName: "Main",
+                //    pattern: "{controller=Homepage}/{action=Index}/{id?}"
+                //    );
+                //endpoints.MapAreaControllerRoute(
+                //    name: "Identity",
+                //    areaName: "Identity",
+                //    pattern: "Identity/Account/{controller=Homepage}/{action=Index}/{id?}"
+                //    );
             });
         }
     }
