@@ -12,7 +12,14 @@ namespace IdentityServer.Areas.Main.Controllers
         public IActionResult Index()
         {
             string key = RouteData.Values["id"].ToString();
-            ViewBag.Key = key;
+            if (key == "Clothing")
+            {
+                return RedirectToAction("Clothing");
+            }
+            return View();
+        }
+        public IActionResult Clothing()
+        {
             return View();
         }
     }

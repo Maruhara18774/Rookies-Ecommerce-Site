@@ -12,7 +12,7 @@ namespace IdentityServer.Data.Models
         public int Category_ID { get; set; }
         [MaxLength(100)]
         public string Category_Name { get; set; }
-        public virtual List<Product> Products { get; set; } = new List<Product>();
+        public virtual List<SubCategory> SubCategories { get; set; } = new List<SubCategory>();
 
     }
 }

@@ -17,9 +17,12 @@ namespace IdentityServer.Data.Models
         [Range(minimum: 0, maximum: double.MaxValue)]
         public double Product_Price { get; set; }
 
+        [Range(minimum: 0, maximum: double.MaxValue)]
+        public double Product_SalePrice { get; set; }
+
         public string Product_Description { get; set; }
 
-        public virtual Category Category { get; set; }
+        public virtual SubCategory SubCategory { get; set; }
 
         public virtual List<Size> Sizes { get; set; } = new List<Size>();
         public virtual ProductState ProductState { get; set; }

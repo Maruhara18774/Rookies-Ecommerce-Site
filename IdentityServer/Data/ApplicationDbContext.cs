@@ -27,6 +27,8 @@ namespace IdentityServer.Data
         public DbSet<Feedback> Feedbacks { get; set; }
         public DbSet<OrderState> OrderStates { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; } 
+
+        public DbSet<SubCategory> SubCategories { get; set; }
     }
 }
