@@ -12,8 +12,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using IdentityServer.Data.Models;
 using Microsoft.AspNetCore.Http;
+using IdentityServer.Data.Models;
 
 namespace IdentityServer
 {

@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{868F8208-8FA9-49DF-B24C-9E11491C46B2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerUI", "CustomerUI\CustomerUI.csproj", "{001083A3-6859-4466-BFD8-34011529D898}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{868F8208-8FA9-49DF-B24C-9E11491C46B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{868F8208-8FA9-49DF-B24C-9E11491C46B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{868F8208-8FA9-49DF-B24C-9E11491C46B2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{001083A3-6859-4466-BFD8-34011529D898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{001083A3-6859-4466-BFD8-34011529D898}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{001083A3-6859-4466-BFD8-34011529D898}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{001083A3-6859-4466-BFD8-34011529D898}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
